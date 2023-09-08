@@ -1,0 +1,166 @@
+1.What is render in react?
+
+Ans :-> render করা মানে হচ্ছে  display  করা । (হিসাব শেষ)
+
+2.Virtual DOM in react?
+
+Ans:-> 1.Batch update:
+when a work is completed as a batch and update with a single operation is called batch update
+  
+  while(i<10000){
+    array.push(i++);
+  }
+  doucment.innerHTML = array.join(" ")
+
+in react jai element update kora hoicha ta bhujer jonno ager code + update code er snap short tar kace rakha lagey jeno shey compare korta pare 
+
+
+3.Components in react js?
+
+Ans:->components are the building blocks of a user interface. (like::navbar, footer, card) this is are components..when we take all of them together then it is called modular components ..
+there are two types of components in react....
+
+***Components are independent and reusable bits of code (which divides the UI into smaller pieces)
+
+(i)Functional Components: 
+
+import React from 'react';
+
+function MyFunctionalComponent(props)
+{
+  return (
+    < div >
+      < h1 > Hello, { props.name}
+  !</ h1 >
+      < p > This is a functional component.</ p >
+    </ div >
+  );
+}
+
+export default MyFunctionalComponent;
+
+(ii): Class Components: 
+
+import React, { Component } from 'react';
+
+class MyClassComponent extends Component
+{
+  render() {
+    return (
+      < div >
+        < h1 > Hello, { this.props.name}
+    !</ h1 >
+        < p > This is a class component.</ p >
+      </ div >
+    );
+  }
+}
+
+export default MyClassComponent;
+
+
+4.how basically react js work behind the seen:
+
+Ans:->Rect.createElement(type{ h1,h2,p,a,img},props(like - className:greeting,),children("hello world or any thing")) ei kaj ta kore babel 
+
+5.what is babel
+
+Ans:-> Babel is a JavaScript compiler that converts modern JavaScript code into a version compatible with all browsers. this is a transpailer
+
+6.what is syntactic sugar
+
+Ans: -> syntactic sugar is syntax within a programming language that is designed to make things easier to read or to express.
+
+7. React return single element
+
+Ans:->  
+(i)i can write this but 
+ return (
+    <div>
+      <h1>awolad hossain</h1>
+    </div>
+
+  );
+
+(ii)i can't write like this because of jsx rules
+
+  return (
+    <div>
+      <h1>awolad hossain</h1>
+    </div>
+  <div>
+
+  </div>
+  );
+
+8.What is re - rendering in react js?
+Ans:-> A second or subsequent render to update the state is called as re-rendering. React components automatically re-render whenever there is a change in their state or props.
+
+
+9. JavaScript in jsx
+Ans: ->  you can write JavaScript code within curly braces { }. This allows you to include dynamic values, variables, expressions, and function calls within your JSX markup.
+
+10. what is expressions
+Ans: -> In JSX, expressions are pieces of JavaScript code that are enclosed within curly braces {} and are used to evaluate and include dynamic values or perform operations within JSX markup.
+
+Expressions can include variables, function calls, mathematical operations, logical operations, conditional statements, and more. They allow you to inject dynamic content into your JSX elements and determine their behavior based on the current state or props
+
+JavaScript value gula tokhn inject kora dita pari react element er modhe:
+
+11.Props or Properties in js?
+
+Ans: ->  props are a way to pass data from a parent component to a child component.
+
+12. how to write map function in react js?
+
+Ans: -> {
+  array.map((element) => (
+
+    < p key ={ element.id} >{ element.names} </ p >
+          ))
+        }
+
+        or if we want to write it in multiline then {
+          return the component
+        }
+
+13. why we don't use for or any loop rather we use map 
+Ans: -> Because map return use something where loop doesn't return any thing and we can't write any codition in the {} because it always need or receive the value 
+
+
+14.Key in react jsx
+
+Ans: -> Keys are used in React to identify which items in the list are changed, updated, or deleted. Keys are used to give an identity to the elements in the lists.
+
+now the question arries if there is not unique id or something then what to do.. map has there perameters (element, index, full array) we can use the index number as an unique key in react js
+
+
+15. Prop drilling 
+
+Ans: -> Prop drilling occurs when a parent component passes data down to its children and then those children pass the same data down to their own children. This process can continue indefinitely. At the end, it's a long chain of component dependencies that can be difficult to manage and maintain.
+we can solve it by using context api...
+
+16. Data export  and receive 
+Ans :-> export default tag or we can use just write export const gun[111]
+
+17. what is hook?
+Ans :-> Hooks allow function components to have access to state and other React features ..They let you use state and other React features without writing a class... 
+
+18.what is useState()
+Ans:-> useState is used to add state to functional components. It allows you to declare a state variable and a function to update it.
+
+19.ReactDOM.createRoot(document.getElementById('root'))
+
+Ans: -> ReactDOM.createRoot() is a method introduced in React 18 that allows you to create a root element for rendering React components. It takes an argument, which is the HTML element where you want to render your React application. In this case, it finds an HTML element with the id 'root' using document.getElementById('root').
+
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+29.
+30.
