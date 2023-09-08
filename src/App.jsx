@@ -7,9 +7,6 @@ import LoadCountry from "./components/Country/LoadCountry";
 const App = () => {
   return (
     <div>
-      {/* <UseState></UseState>
-      <UseEffect></UseEffect> */}
-
       <LoadCountry />
     </div>
   );
